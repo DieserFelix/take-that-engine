@@ -1,7 +1,6 @@
-from typing import Dict, List
+from typing import Dict
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from app.lib.Room import Room
-from app.lib.decode_token import decode_token
 from jose import jwt
 from app.lib.environment import SECRET_KEY
 
