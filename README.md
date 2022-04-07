@@ -1,7 +1,5 @@
-# Shopping Manager API
-This is an API that manages shopping lists.  
-Users have to create stores they frequent and articles (and how much they cost) themselves before adding them to shopping lists as items.  
-Shopping lists calculate their costs using article prices of the last time the specific list was updated.
+# Take That Engine
+This is a game engine for the 'Take That' card game.
 
 ## Installation
 
@@ -25,14 +23,8 @@ Next, to install required packages run:
 
 ## Setup
 Create a `.env` file and set the following environment variables:
-- `DATABASE_URL = "mysql+mysqldb://<username>:<password>@<database host>/<database name>"`
-  
-- `CREATE_DATABASE = true`
-  If set to true, the database tables will be created on startup.
-
-- `SALT`
-  Random value used to salt user passwords before hashing
-
+- `CORS_ORIGINS`
+  Allowed CORS hosts
 - `SECRET_KEY`
   HS256 key used to encode JWT tokens.
 
@@ -44,4 +36,4 @@ Then run:
 
     uvicorn app.main:app --reload
 
-The Shopping Manager API is now running under http://localhost:8000
+The engine is now running under http://localhost:8000
